@@ -1,0 +1,13 @@
+name: Check external links
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress --timeout 20 --max-redirects 5 "./**/*.md"
