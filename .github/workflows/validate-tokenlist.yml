@@ -1,0 +1,18 @@
+name: Validate tokenlist.json
+on:
+  push:
+    paths: [ "data/tokenlist.json" ]
+  pull_request:
+    paths: [ "data/tokenlist.json" ]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - run: npm i -g ajv-cli
+      - run: |
+          ajv validate \
+            -s https://raw.githubusercontent.com/Uniswap/token-lists/main/src/tokenlist.schema.json \
+            -d data/tokenlist.json
