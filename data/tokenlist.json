@@ -1,0 +1,13 @@
+{
+  "name": "Cryptohost Bridged USD",
+  "logoURI": "https://www.cryptohostbridgedusd.io/assets/CUSD.png",
+  "keywords": ["stablecoin", "multichain", "defi"],
+  "timestamp": "2025-08-30T00:00:00Z",
+  "version": { "major": 1, "minor": 0, "patch": 0 },
+  "tokens": [
+    { "chainId": 1, "address": "0x54fdc17E702DC85E33C5aeCFaE57c76cECf23C4c", "name": "Cryptohost Bridged USD", "symbol": "CUSD", "decimals": 18, "logoURI": "https://www.cryptohostbridgedusd.io/assets/CUSD.png" },
+    { "chainId": 56, "address": "0x7f32650c35Cf5a90447B922932b09262626a1346", "name": "Cryptohost Bridged USD", "symbol": "CUSD", "decimals": 18, "logoURI": "https://www.cryptohostbridgedusd.io/assets/CUSD.png" },
+    { "chainId": 42161, "address": "0x82656b01211ed760f3ca7f597b05928cd72c1971", "name": "Cryptohost Bridged USD", "symbol": "CUSD", "decimals": 18, "logoURI": "https://www.cryptohostbridgedusd.io/assets/CUSD.png" },
+    { "chainId": 10, "address": "0x82656b01211ed760f3ca7f597b05928cd72c1971", "name": "Cryptohost Bridged USD", "symbol": "CUSD", "decimals": 18, "logoURI": "https://www.cryptohostbridgedusd.io/assets/CUSD.png" }
+  ]
+}
